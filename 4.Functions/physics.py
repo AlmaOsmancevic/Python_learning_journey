@@ -36,10 +36,10 @@ c0_in_fahrenheit = c_to_f(0)
 
 train_force = get_force(train_mass, train_acceleration)
 print(train_force)
-print("The GE train supplies " + str(train_force) + " Newtons of force.")
+print("The GE train supplies {tforce} Newtons of force.".format(tforce = train_force))
 
 bomb_energy = get_energy(bomb_mass)
-print("A 1kg bomb supplies " + str(bomb_energy) + " X Joules.")
+print("A 1kg bomb supplies {bomb_energy} X Joules.".format(bomb_energy=bomb_energy))
 
 train_work = get_work(train_mass, train_acceleration, train_distance)
-print("The GE train does " + str(train_work) + " Joules of work over " + str(train_distance) + " meters.")
+print("The GE train does {train_work} Joules of work over {train_distance} meters.".format(train_work = train_work, train_distance = train_distance))
